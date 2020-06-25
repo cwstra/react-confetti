@@ -24,7 +24,6 @@
     "README.md",
     "LICENSE.md",
     "dist/",
-    "src/",
     "index.js"
   ],
   "scripts": {
@@ -36,7 +35,7 @@
     "prebuild": "yarn clean",
     "watch": "webpack --watch",
     "test": "tsc; yarn run lint",
-    "clean": "git clean -xfd dist/",
+    "clean": "yarn tsc clean.ts && yarn node clean.js ./dist/",
     "cleanall": "git clean -xfd .",
     "lint": "eslint . --ext .js --ext .ts --ext .tsx",
     "prepare": "yarn run lint && yarn run build",
