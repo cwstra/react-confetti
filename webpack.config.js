@@ -20,6 +20,12 @@ const base = {
   devtool: 'source-map',
   entry: {
     'react-confetti': ['./src/ReactConfetti.tsx'],
+    'react-confetti/Shapes/Circle': ['./src/Shapes/Circle.ts'],
+    'react-confetti/Shapes/EmitterShape': ['./src/Shapes/EmitterShape.ts'],
+    'react-confetti/Shapes/Parallelogram': ['./src/Shapes/Parallelogram.ts'],
+    'react-confetti/Shapes/Rect': ['./src/Shapes/Rect.ts'],
+    'react-confetti/Shapes/Sector': ['./src/Shapes/Sector.ts'],
+    'react-confetti/Shapes/Triangle': ['./src/Shapes/Triangle.ts'],
   },
   output: {
     path: path.join(__dirname, 'dist'),
